@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+	<h1>SONG DOWNLOADER BY GUY STEINBERGER</h1>
+	<form action="/sendmp3" method="post" id="postform">
+	  <label for="mp3">mp3 video: </label>
+	  <input type="text" id="mp3" name="mp3"><br><br>
+	  <input type="submit" value="DOWNLOAD" onclick="myFunction()">
+	</form>
+	<p>Click on the submit button to submit the form.</p>
+	<div id="myDIV" style="display: none">
+		<b>wait while we preaparing your mp3 file... </b> </br> <img src="/loading.gif" height="42" width="42">
+	</div>
+</center>
+</body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  x.style.display = "block";
+  var y = document.getElementById("postform");
+  y.style.display = "none";
+}
+</script>
+</html>
